@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal layanan akademik mahasiswa untuk mengajukan berbagai kebutuhan administrasi akademik.">
+    <title>Portal Layanan Akademik</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#beranda" class="brand">
+                <span class="brand-icon" aria-hidden="true">PA</span>
+                <span>
+                    <strong>Portal Akademik Maharani</strong>
+                    <small>Layanan Mahasiswa</small>
+                </span>
+            </a>
+
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#permohonan">Permohonan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <p class="eyebrow">PORTAL LAYANAN MAHASISWA</p>
+
+                <h1 id="hero-title">
+                    Semua kebutuhan akademik,
+                    <span>dalam satu portal.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Ajukan kebutuhan administrasi akademik dengan lebih
+                    mudah, praktis, dan terorganisir melalui satu halaman.
+                </p>
+
+                <a href="#layanan" class="button button-primary">
+                    Jelajahi Layanan
+                </a>
+            </div>
+        </section>
+
+        <section class="services section-padding"
+                 id="layanan"
+                 aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">LAYANAN AKADEMIK</p>
+                    <h2 id="services-title">Apa yang kamu butuhkan?</h2>
+                    <p>Pilih layanan sesuai kebutuhan administrasimu.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <span class="service-number"
+                              aria-hidden="true">01</span>
+                        <h3>Surat Aktif Kuliah</h3>
+                        <p>
+                            Pengajuan surat keterangan mahasiswa aktif
+                            untuk keperluan administrasi.
+                        </p>
+                        <a href="#permohonan"
+                           class="service-link"
+                           aria-label="Ajukan Surat Aktif Kuliah">
+                            Ajukan layanan &rarr;
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number"
+                              aria-hidden="true">02</span>
+                        <h3>Transkrip Sementara</h3>
+                        <p>
+                            Permohonan dokumen berisi nilai akademik
+                            sementara selama masa studi.
+                        </p>
+                        <a href="#permohonan"
+                           class="service-link"
+                           aria-label="Ajukan Transkrip Sementara">
+                            Ajukan layanan &rarr;
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number"
+                              aria-hidden="true">03</span>
+                        <h3>Cuti Akademik</h3>
+                        <p>
+                            Pengajuan permohonan cuti akademik sesuai
+                            prosedur yang berlaku.
+                        </p>
+                        <a href="#permohonan"
+                           class="service-link"
+                           aria-label="Ajukan Cuti Akademik">
+                            Ajukan layanan &rarr;
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="request section-padding"
+                 id="permohonan"
+                 aria-labelledby="request-title">
+            <div class="container request-layout">
+
+                <div class="request-info">
+                    <p class="eyebrow">FORMULIR ONLINE</p>
+                    <h2 id="request-title">Ajukan permohonan</h2>
+                    <p>
+                        Isi data dengan benar agar permohonan dapat
+                        ditinjau sesuai kebutuhanmu.
+                    </p>
+                </div>
+
+                <form class="request-form" action="#" method="get">
+                    <div class="form-group">
+                        <label for="nama">Nama lengkap</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            autocomplete="name"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email mahasiswa</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+                        <input
+                            type="text"
+                            id="nim"
+                            name="nim"
+                            autocomplete="off"
+                            placeholder="Masukkan NIM"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis-layanan">Jenis layanan</label>
+                        <select
+                            id="jenis-layanan"
+                            name="jenis-layanan"
+                            required
+                        >
+                            <option value="">Pilih jenis layanan</option>
+                            <option value="surat-aktif">
+                                Surat Aktif Kuliah
+                            </option>
+                            <option value="transkrip">
+                                Transkrip Sementara
+                            </option>
+                            <option value="cuti">
+                                Cuti Akademik
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keperluan">Keperluan permohonan</label>
+                        <textarea
+                            id="keperluan"
+                            name="keperluan"
+                            rows="4"
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Jelaskan keperluanmu..."
+                            required
+                        ></textarea>
+                        <small>Maksimal 500 karakter.</small>
+                    </div>
+
+                    <button type="submit" class="button button-primary">
+                        Kirim Permohonan
+                    </button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 Portal Layanan Akademik.
+                Dirancang untuk kemudahan mahasiswa.
+            </p>
+            <a href="#beranda">Kembali ke atas &uarr;</a>
+        </div>
+    </footer>
+
+</body>
+</html>
